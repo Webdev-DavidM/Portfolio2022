@@ -1,6 +1,8 @@
 import { css } from 'styled-components';
+import { color, fonts, fontWeights } from '../Variables';
 
 export const TopLevel = css`
+  ${console.log(color.black)}
   html {
     height: 100%;
   }
@@ -17,8 +19,10 @@ export const TopLevel = css`
   body {
     display: flex;
     flex-direction: column;
-    font-family: 'Scope One', serif;
-    background-color: red !important ;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: ${color.lightSlate};
     height: 100%;
     justify-content: space-between;
     line-height: 1.4;

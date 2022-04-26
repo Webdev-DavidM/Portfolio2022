@@ -4,8 +4,8 @@ styled components
 react
 prop types
 react transition group
-grapgql
-drupal
+graphql
+contentful
 
 
 1) Set up styled components 

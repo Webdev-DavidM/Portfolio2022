@@ -4,13 +4,12 @@ import GlobalStyles from './Global/CSS';
 import Nav from './Nav/Nav';
 import About from './About/About';
 import Experience from './Experience/Experience';
-import MainProject from './MainProjects/MainProjects';
 import Work from './Work/Work';
-import ExtraProjects from './ExtraProjects/ExtraProjects';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 import * as theme from './Global/Variables';
 import { ThemeProvider } from 'styled-components';
+import Intro from './Intro/Intro';
 
 function App() {
   return (
@@ -19,11 +18,10 @@ function App() {
         <GlobalStyles />
         <Header />
         <Nav />
+        <Intro />
         <About />
         <Experience />
         <Work />
-        <MainProject />
-        <ExtraProjects />
         <Contact />
         <Footer />
       </ThemeProvider>

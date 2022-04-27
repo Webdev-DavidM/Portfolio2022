@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import * as Styled from './experience.styles';
+import { debounce, throttle } from 'lodash';
 import {
   Link,
   DirectLink,
@@ -16,16 +17,13 @@ export default function Experience() {
 
   const sectionInView = () => {
     window.addEventListener('scroll', () => {
-      console.log(
-        window.scrollY,
-        elementPosition.current.offsetTop,
-        elementPosition.current.height
-      );
-      if (window.scrollY > elementPosition.current.offsetTop - 1000) {
+      console.log(elementPosition.current.clientHeight);
+      if (
+        window.scrollY >
+        elementPosition.current.offsetTop - elementPosition.current.clientHeight
+      ) {
         console.log('experience on screen');
         setAnimateInView(true);
-      } else {
-        setAnimateInView(false);
       }
     });
     // let sectionDistanceFromTop = elementPosition = useRef(null);

@@ -5,16 +5,19 @@ react
 prop types
 react transition group
 graphql
-contentful
+content
+
+today
+navbar and animations and navbar
+intro
 
 
 1) Set up styled components 
 global styles
-create a theme changer light and dark mode
 
-2) Create images and also copy and add to contentful
+2) Create images and also copy and add to drupal
 
-3) Create the components and connect to contentful via graphql
+3) Create the components and connect to drupal via graphql
 
 4) Animations- set out the elements using emmett with just borders for the animationn and add the content later
 i) Opening animation

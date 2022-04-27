@@ -7,7 +7,7 @@ import Experience from './Experience/Experience';
 import Work from './Work/Work';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
-import * as theme from './Global/Variables';
+import theme from './Global';
 import { ThemeProvider } from 'styled-components';
 import Intro from './Intro/Intro';
 

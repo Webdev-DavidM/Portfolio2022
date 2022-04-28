@@ -2,7 +2,6 @@ import { css } from 'styled-components';
 import { color, fonts, fontWeights } from '../Variables';
 
 export const TopLevel = css`
-  ${console.log(color.black)}
   html {
     height: 100%;
   }

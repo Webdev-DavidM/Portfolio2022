@@ -14,6 +14,7 @@ export const color = {
   greenTint: 'rgba(100, 255, 218, 0.1)',
   pink: '#f57dff',
   blue: '#57cbff',
+  red: 'red',
 };
 
 export const fonts = {

@@ -3,8 +3,8 @@ import * as Styled from './hamburger.styles';
 
 export default function Hamburger() {
   return (
-    <Styled.hamburger for="check">
-      <label for="check">
+    <Styled.hamburger htmlFor="check">
+      <label htmlFor="check">
         <input type="checkbox" id="check" />
         <span></span>
         <span></span>

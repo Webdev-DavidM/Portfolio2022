@@ -7,26 +7,24 @@ import Experience from './Experience/Experience';
 import Work from './Work/Work';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
-import theme from './Global';
-import { ThemeProvider } from 'styled-components';
 import Intro from './Intro/Intro';
 
 function App() {
   return (
     <div className="App">
-      <ThemeProvider theme={theme}>
-        <GlobalStyles />
-        <Header />
-        <Nav />
-        <Intro />
-        <About />
-        <Experience />
-        <Work />
-        <Contact />
-        <Footer />
-      </ThemeProvider>
+      <GlobalStyles />
+      <Header />
+      <Nav />
+      <Intro />
+      <About />
+      <Experience />
+      <Work />
+      <Contact />
+      <Footer />
     </div>
   );
 }
 
 export default App;
+
+

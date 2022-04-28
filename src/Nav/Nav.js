@@ -3,7 +3,7 @@ import * as Styled from './nav.styles';
 import { scroller } from 'react-scroll';
 import Hamburger from './hamburger/Hamburger';
 export default function Nav() {
-  const [animateInView, setAnimateInView] = useState(false);
+  const [showSideMenu, setShowSideMenu] = useState(false);
 
   const scrollTo = (element) => {
     scroller.scrollTo(`${element}`, {
@@ -15,39 +15,47 @@ export default function Nav() {
   return (
     <Styled.navContainer>
       <Styled.desktopNavBar>
-        <Styled.ul>
+        <ul className="links">
           <li>
-            <a className="about" to="about" onClick={() => scrollTo('about')}>
+            <span
+              className="about"
+              to="about"
+              onClick={() => scrollTo('about')}
+            >
               Contact
-            </a>
+            </span>
           </li>
           <li>
-            <a
+            <span
               className="experience"
               to="experience"
               onClick={() => scrollTo('experience')}
             >
               Experience
-            </a>
+            </span>
           </li>
           <li>
-            <a className="work" to="work" onClick={() => scrollTo('work')}>
+            <span className="work" to="work" onClick={() => scrollTo('work')}>
               Work
-            </a>
+            </span>
           </li>
-          <li>
-            <a
+          <span>
+            <li
               className="contact"
               to="contact"
               onClick={() => scrollTo('contact')}
             >
               Contact
-            </a>
-          </li>
-        </Styled.ul>
+            </li>
+          </span>
+        </ul>
       </Styled.desktopNavBar>
-      <Styled.mobileSideNavBar></Styled.mobileSideNavBar>
-      <Hamburger className="hamburger" />
+      <Styled.mobileSideNavBar
+        sideMenu={showSideMenu}
+      ></Styled.mobileSideNavBar>
+      <div onClick={() => setShowSideMenu(true)}>
+        <Hamburger className="hamburger" />
+      </div>
     </Styled.navContainer>
   );
 }

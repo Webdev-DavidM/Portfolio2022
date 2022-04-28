@@ -1,12 +1,18 @@
 import styled from 'styled-components';
+import { device } from '../../Global/Breakpoints';
 
 export const hamburger = styled.div`
   display: grid;
   place-items: center;
+  position: absolute;
+  right: 2%;
+  top: 10%;
   margin: 0;
   padding: 0;
+  transform: scale(0.5);
+  z-index: 1000;
 
-  @media ${({ theme }) => theme.device.tablet} {
+  @media ${device.tablet} {
     display: none;
   }
 

@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import { color } from '../Global/Variables';
 
 export const container = styled.div`
-  height: 100vh;
+  height: 80vh;
+  padding: 8rem;
   background-color: ${color.darkNavy};
 `;
 

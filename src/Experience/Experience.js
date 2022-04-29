@@ -17,16 +17,13 @@ export default function Experience() {
 
   const sectionInView = () => {
     window.addEventListener('scroll', () => {
-      console.log(elementPosition.current.clientHeight);
       if (
         window.scrollY >
         elementPosition.current.offsetTop - elementPosition.current.clientHeight
       ) {
-        console.log('experience on screen');
         setAnimateInView(true);
       }
     });
-    // let sectionDistanceFromTop = elementPosition = useRef(null);
   };
 
   useEffect(() => {

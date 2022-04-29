@@ -1,1 +1,1 @@
-1.side menu menu wont close
+1.side menu cant get both animations together

@@ -34,7 +34,7 @@ export const green = styled.p`
   color: ${color.green};
   ${fonts.mono};
   opacity: 0;
-  animation-delay: 1.1s;
+  animation-delay: 0.1s;
 `;
 
 export const name = styled.h2`
@@ -42,7 +42,7 @@ export const name = styled.h2`
   animation: ${fadeUp} 1s forwards;
   color: ${color.lightSlate};
   opacity: 0;
-  animation-delay: 1.2s;
+  animation-delay: 0.2s;
 
   @media ${device.tablet} {
     font-size: 60px;
@@ -54,7 +54,7 @@ export const job = styled.h2`
   animation: ${fadeUp} 1s forwards;
   color: ${color.slate};
   opacity: 0;
-  animation-delay: 1.3s;
+  animation-delay: 0.3s;
 
   @media ${device.tablet} {
     font-size: 60px;
@@ -65,5 +65,5 @@ export const description = styled.p`
   animation: ${fadeUp} 1s forwards;
   color: ${color.slate};
   opacity: 0;
-  animation-delay: 1.4s;
+  animation-delay: 0.4s;
 `;

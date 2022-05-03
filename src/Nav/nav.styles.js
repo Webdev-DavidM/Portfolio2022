@@ -12,6 +12,7 @@ export const navContainer = styled.div`
   background-color: ${color.darkNavy};
   align-items: center;
   position: fixed;
+  z-index: 2000;
   padding: 2rem;
   transition: top 0.6s ease-in-out;
   top: ${({ scrollDirection, scrolledToTop }) =>
@@ -77,7 +78,7 @@ export const mobileSideNavBar = styled.div`
   height: 100vh;
   top: 0;
   padding: 1rem;
-  z-index: 500;
+  z-index: 3000;
   background-color: ${color.lightNavy};
   transition: right 0.8s ease-in-out;
   right: ${({ sideMenu }) => (sideMenu ? '0' : '-80%')};

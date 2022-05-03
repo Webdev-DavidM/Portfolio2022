@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 import { color } from '../Global/Variables';
 
 export const splashPage = styled.div`
-  position: relative;
+  position: absolute;
   z-index: ${({ showSplash }) => (showSplash ? '2000' : '0')};
   height: 100vh;
   width: 100%;
@@ -11,7 +11,8 @@ export const splashPage = styled.div`
   align-items: center;
   display: ${({ showSplash }) => (showSplash ? 'flex' : 'none')};
   flex-direction: column;
-  transition: 3s display ease-in-out;
+  transition: 3s all ease-out;
+  opacity: ${({ showSplash }) => (showSplash ? '1' : '0')};
 `;
 
 export const splashPageContainer = styled.div``;

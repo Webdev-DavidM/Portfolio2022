@@ -28,7 +28,7 @@ export const TopLevel = css`
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: ${color.background};
+    background-color: ${color.darkNavy};
   }
 
   body.is-active {

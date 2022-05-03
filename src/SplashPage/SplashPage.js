@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Styled from './splashpage.styles';
 
-export default function SplashPage() {
+export default function SplashPage({ showSplash }) {
   const tech = [
     { tech: 'HTML', delay: '0', scale: 1 },
     { tech: 'CSS', delay: '1.4', scale: 1 },
@@ -19,19 +19,17 @@ export default function SplashPage() {
     { tech: 'SQL', delay: '9.8', scale: 6 },
     { tech: 'Contentful', delay: '9.9', scale: 7 },
     { tech: 'MongoDB', delay: '10', scale: 8.3 },
-    { tech: 'SQL', delay: '10.1', scale: 15 },
+    { tech: 'SQL', delay: '10.1', scale: 30 },
   ];
 
   return (
-    <Styled.splashPage>
-      {tech.map((t) => (
+    <Styled.splashPage showSplash={showSplash}>
+      {tech.map((t, index) => (
         <>
-          <Styled.tech delay={t.delay} scale={t.scale}>
+          <Styled.tech key={index} delay={t.delay} scale={t.scale}>
             {t.tech}
           </Styled.tech>
           <Styled.cameraFlash />
-          <Styled.name>David Mulholland</Styled.name>
-          <Styled.role>Full stack developer</Styled.role>
         </>
       ))}
     </Styled.splashPage>

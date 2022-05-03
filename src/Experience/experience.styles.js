@@ -4,7 +4,6 @@ import { color } from '../Global/Variables';
 export const container = styled.div`
   height: 80vh;
   padding: 8rem;
-  background-color: ${color.darkNavy};
 `;
 
 export const fade = styled.h2`

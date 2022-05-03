@@ -3,5 +3,4 @@ import { color } from '../Global/Variables';
 
 export const container = styled.div`
   height: 100vh;
-  background-color: ${color.pink};
 `;

@@ -21,14 +21,14 @@ export const TopLevel = css`
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: ${color.lightSlate};
+    color: ${color.green};
     height: 100%;
     justify-content: space-between;
     line-height: 1.4;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #fbf5ee;
+    background-color: ${color.background};
   }
 
   body.is-active {

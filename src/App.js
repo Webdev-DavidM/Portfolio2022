@@ -27,7 +27,6 @@ function App() {
     <div>
       <GlobalStyles />
       <SplashPage showSplash={showSplash} />
-
       <Header />
       <Nav />
       {!showSplash && <Intro />}

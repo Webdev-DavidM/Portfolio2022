@@ -16,4 +16,15 @@ export const menuOpenCross = styled.div`
   align-items: center;
   justify-content: center;
   height: 30px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .close {
+    background: red;
+    svg path {
+      fill: yellow;
+    }
+  }
 `;

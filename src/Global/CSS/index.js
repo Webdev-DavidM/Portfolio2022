@@ -5,7 +5,6 @@ import { BoxSizing } from './box-sizing';
 import { Shared } from './shared';
 import { TopLevel } from './top-level';
 
-
 const GlobalStyles = createGlobalStyle`
   ${Normalize}
   ${Reset}

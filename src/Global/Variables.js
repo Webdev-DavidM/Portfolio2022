@@ -15,6 +15,7 @@ export const color = {
   pink: '#f57dff',
   blue: '#57cbff',
   red: 'red',
+  background: 'rgba(10, 25, 47, 0.85)',
 };
 
 export const fonts = {

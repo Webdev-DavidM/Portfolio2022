@@ -10,10 +10,14 @@ const roll = keyframes`
 `;
 
 export const menuCloseCross = styled.div`
-  animation: ${roll} 0.8s forwards;
+  animation: ${roll} 1s forwards;
   width: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 30px;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;

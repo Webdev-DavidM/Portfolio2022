@@ -30,7 +30,18 @@ export const ul = styled.ul`
   }
 `;
 
+const fadeUp = keyframes`
+  0%  { 
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+`;
+
 export const icon = styled.div`
+  animation: ${fadeUp} 1s forwards;
   background-color: ${color.green};
   height: 30px;
   width: 30px;

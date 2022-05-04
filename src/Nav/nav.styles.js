@@ -31,12 +31,11 @@ export const ul = styled.ul`
 `;
 
 export const icon = styled.div`
-  color: ${color.green};
-  height: 20px;
-
-  @media ${device.tablet} {
-    display: none;
-  }
+  background-color: ${color.green};
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  overflow: hidden;
 `;
 
 const dropDown = keyframes`
@@ -54,7 +53,7 @@ export const li = styled.li`
   animation: ${dropDown} 1s forwards;
   color: ${color.green};
   padding: 1rem;
-  font-size: 12px;
+  font-size: 14px;
   opacity: 0;
   animation-delay: ${({ delay }) => `${delay}s`};
 

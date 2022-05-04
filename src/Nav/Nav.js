@@ -6,6 +6,7 @@ import useScrollDirection from '../hooks/scrollDirection';
 import MenuOpenCross from './animations/MenuOpenCross';
 import MenuCloseCross from './animations/MenuCloseCross';
 import { color } from '../Global/Variables';
+import logo from '../Images/photo.jpeg';
 
 export default function Nav() {
   const [showSideMenu, setShowSideMenu] = useState(false);
@@ -42,6 +43,9 @@ export default function Nav() {
       scrolledToTop={scrolledToTop}
       scrolled={scrolled}
     >
+      <Styled.icon>
+        <img src={logo} />
+      </Styled.icon>
       <Styled.ul>
         {links.map((link, index) => (
           <Styled.li
@@ -54,43 +58,7 @@ export default function Nav() {
             {link}
           </Styled.li>
         ))}
-        {/* <Styled.li
-          className="about"
-          to="about"
-          onClick={() => {
-            scrollTo('about');
-          }}
-        >
-          About
-        </Styled.li>
-        <Styled.li
-          className="experience"
-          to="experience"
-          onClick={() => scrollTo('experience')}
-        >
-          {' '}
-          Experience
-        </Styled.li>
-        <Styled.li
-          className="work"
-          to="work"
-          onClick={() => {
-            scrollTo('work');
-            setScrolled(true);
-          }}
-        >
-          {' '}
-          Work
-        </Styled.li>
-        <Styled.li
-          className="contact"
-          to="contact"
-          onClick={() => scrollTo('contact')}
-        >
-          Contact
-        </Styled.li> */}
       </Styled.ul>
-      <Styled.icon>Icon</Styled.icon>
       <Styled.hamburgerContainer onClick={() => setShowSideMenu(true)}>
         <MenuIcon fontSize="large" htmlColor={`${color.green}`} />
       </Styled.hamburgerContainer>

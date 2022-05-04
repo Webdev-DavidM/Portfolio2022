@@ -12,7 +12,7 @@ export const inner = (maxWidth = null) => css`
 export const button = () => css`
   padding: 0.5rem 1rem;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 14px;
   background-color: none;
   border: 1px solid ${color.green};
   color: ${color.green};

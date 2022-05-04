@@ -13,6 +13,8 @@ export default function Nav() {
   const [scrolledToTop, setScrolledToTop] = useState(true);
   const [scrolled, setScrolled] = useState(false);
 
+  const links = ['About', 'Experience', 'Work', 'Contact'];
+
   const scrollTo = (element) => {
     scroller.scrollTo(`${element}`, {
       duration: 1200,
@@ -30,7 +32,6 @@ export default function Nav() {
     window.addEventListener('scroll', handleScroll);
 
     return () => {
-      clearTimeout(timeout);
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
@@ -42,7 +43,18 @@ export default function Nav() {
       scrolled={scrolled}
     >
       <Styled.ul>
-        <Styled.li
+        {links.map((link, index) => (
+          <Styled.li
+            delay={`0.${index}`}
+            key={link}
+            className={link.toLowerCase()}
+            to={link.toLowerCase()}
+            onClick={() => scrollTo(link.toLowerCase())}
+          >
+            {link}
+          </Styled.li>
+        ))}
+        {/* <Styled.li
           className="about"
           to="about"
           onClick={() => {
@@ -76,7 +88,7 @@ export default function Nav() {
           onClick={() => scrollTo('contact')}
         >
           Contact
-        </Styled.li>
+        </Styled.li> */}
       </Styled.ul>
       <Styled.icon>Icon</Styled.icon>
       <Styled.hamburgerContainer onClick={() => setShowSideMenu(true)}>

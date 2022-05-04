@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { color } from '../Global/Variables';
 import { device } from '../Global/Breakpoints';
 import { button, inner } from '../Global/Mixins';
@@ -39,10 +39,24 @@ export const icon = styled.div`
   }
 `;
 
+const dropDown = keyframes`
+  0%  { 
+    opacity: 0;
+    transform:translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform:translateY(0px);
+  }
+  `;
 export const li = styled.li`
+  animation: ${dropDown} 1s forwards;
   color: ${color.green};
   padding: 1rem;
   font-size: 12px;
+  opacity: 0;
+  animation-delay: ${({ delay }) => `${delay}s`};
 
   &:hover {
     cursor: pointer;

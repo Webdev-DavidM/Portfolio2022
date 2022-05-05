@@ -11,7 +11,9 @@ export const experience = styled.div`
   ${section({ width: '1100px' })}
 `;
 
-export const fade = styled.h2`
-  transition: opacity 1s ease-in-out;
+export const fade = styled.div`
+  transition: all 2s ease-in-out;
   opacity: ${({ inView }) => (inView ? '1' : '0')};
+  animation-delay: 1s;
 `;
+

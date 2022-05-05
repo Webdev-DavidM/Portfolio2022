@@ -68,9 +68,11 @@ export const li = styled.li`
   opacity: 0;
   animation-delay: ${({ delay }) => `${delay}s`};
   ${fonts.mono}
+  transition:  color 0.3s ease-in-out;
 
   &:hover {
     cursor: pointer;
+    color: ${color.green};
   }
 `;
 

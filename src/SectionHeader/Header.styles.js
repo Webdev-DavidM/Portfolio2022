@@ -10,12 +10,14 @@ export const number = styled.div`
   color: ${color.green};
   padding-right: 0.5rem;
   ${fonts.mono}
-  font-size:22px;
+  font-size:18px;
 `;
 
 export const title = styled.span`
   color: ${color.lightSlate};
-  font-size: 30px;
+  font-size: 28px;
+  font-family: ${fonts.main};
+  font-weight: 700;
 `;
 
 export const line = styled.span`

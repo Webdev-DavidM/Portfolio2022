@@ -11,7 +11,7 @@ import {
 } from 'react-scroll';
 import Header from '../SectionHeader/Header';
 
-export default function Experience() {
+export default function Work() {
   const [animateInView, setAnimateInView] = useState(false);
   const elementPosition = useRef(null);
 
@@ -30,7 +30,7 @@ export default function Experience() {
     sectionInView();
   }, []);
   return (
-    <Element name="experience" className="element">
+    <Element name="work" className="element">
       <Styled.fade inView={animateInView}>
         <Styled.sectionContainer ref={elementPosition}>
           <Styled.work>

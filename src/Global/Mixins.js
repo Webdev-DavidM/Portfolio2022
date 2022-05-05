@@ -12,18 +12,25 @@ export const inner = (maxWidth = null) => css`
 
 export const button = (padding = { padding: '.5rem' }) => css`
   ${padding}
-  ${console.log(padding)}
   border-radius: 4px;
   font-size: 14px;
   background-color: none;
   border: 1px solid ${color.green};
   color: ${color.green};
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    background-color: ${color.green};
+    border: 1s solid transparent;
+    color: ${color.navy};
+  }
 `;
 
 export const flexContainer = (verticalPosition = null) => css`
   display: flex;
   justify-content: center;
-  height: 70vh;
+  height: 100vh;
   ${verticalPosition};
 `;
 

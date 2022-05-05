@@ -11,7 +11,8 @@ export const work = styled.div`
   ${section({ width: '1200px' })}
 `;
 
-export const fade = styled.h2`
-  transition: opacity 1s ease-in-out;
+export const fade = styled.div`
+  transition: all 3s ease-in;
   opacity: ${({ inView }) => (inView ? '1' : '0')};
+  animation-delay: 1s;
 `;

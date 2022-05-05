@@ -16,17 +16,19 @@ export const number = styled.span`
   ${fonts.mono};
   color: ${color.green};
   margin-right: 0.5rem;
+  font-size: 18px;
 `;
 
 export const subtitle = styled.span`
   ${fonts.mono};
-  font-size: 24px;
+  font-size: 19px;
   color: ${color.slate};
 `;
 
-export const title = styled.h2`
+export const title = styled.h3`
   margin-top: 1rem;
   color: ${color.lightSlate};
+  font-size: 28px;
 `;
 
 export const text = styled.p`
@@ -37,7 +39,8 @@ export const contactButton = styled.button`
   ${button({ padding: '1.2rem' })}
 `;
 
-export const fade = styled.h2`
-  transition: opacity 1s ease-in-out;
+export const fade = styled.div`
+  transition: opacity 3s ease-in-out;
   opacity: ${({ inView }) => (inView ? '1' : '0')};
+  animation-delay: 1s;
 `;

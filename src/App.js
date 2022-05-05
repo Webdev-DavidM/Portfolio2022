@@ -20,7 +20,8 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       hideSplash();
-    }, 13000);
+      // }, 13000);
+    }, 0);
   }, []);
 
   return (

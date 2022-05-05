@@ -1,21 +1,15 @@
 import styled, { keyframes } from 'styled-components';
 import { color, fonts } from '../Global/Variables';
 import { device } from '../Global/Breakpoints';
+import { flexContainer, section } from '../Global/Mixins';
 
-export const flexContainer = styled.div`
-  display: flex;
-  justify-content: center;
+export const sectionContainer = styled.div`
+  //Not i have to pass in css in js format
+  ${flexContainer({ alignItems: 'center' })}
 `;
 
 export const intro = styled.div`
-  max-width: 1000px;
-  min-height: 500px;
-  margin-top: 80px;
-  padding: 2rem;
-
-  @media ${device.tablet} {
-    padding: 8rem;
-  }
+  ${section}
 `;
 
 const fadeUp = keyframes`

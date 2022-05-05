@@ -55,6 +55,7 @@ export default function Nav() {
             to={link.toLowerCase()}
             onClick={() => scrollTo(link.toLowerCase())}
           >
+            <Styled.span>0{index + 1}.</Styled.span>
             {link}
           </Styled.li>
         ))}

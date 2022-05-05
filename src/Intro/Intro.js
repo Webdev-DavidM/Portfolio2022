@@ -3,7 +3,7 @@ import * as Styled from './intro.styled';
 
 export default function Intro() {
   return (
-    <Styled.flexContainer>
+    <Styled.sectionContainer>
       <Styled.intro>
         <Styled.green>Hi, my name is</Styled.green>
         <Styled.name>David Mulholland</Styled.name>
@@ -16,6 +16,6 @@ export default function Intro() {
           Aldus PageMaker including versions of Lorem Ipsum.
         </Styled.description>
       </Styled.intro>
-    </Styled.flexContainer>
+    </Styled.sectionContainer>
   );
 }

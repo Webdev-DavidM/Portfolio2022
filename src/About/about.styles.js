@@ -1,6 +1,17 @@
-import styled from 'styled-components';
-import { color } from '../Global/Variables';
+import styled, { keyframes } from 'styled-components';
+import { color, fonts } from '../Global/Variables';
+import { device } from '../Global/Breakpoints';
+import { flexContainer, section } from '../Global/Mixins';
 
-export const container = styled.div`
-  height: 100vh;
+export const sectionContainer = styled.div`
+  ${flexContainer}
+`;
+
+export const about = styled.div`
+  ${section}
+`;
+
+export const fade = styled.h2`
+  transition: opacity 1s ease-in-out;
+  opacity: ${({ inView }) => (inView ? '1' : '0')};
 `;

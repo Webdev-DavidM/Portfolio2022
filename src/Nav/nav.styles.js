@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
-import { color } from '../Global/Variables';
+import { color, fonts } from '../Global/Variables';
 import { device } from '../Global/Breakpoints';
-import { button, inner } from '../Global/Mixins';
+import { button } from '../Global/Mixins';
 
 export const navContainer = styled.div`
   height: 80px;
@@ -62,15 +62,22 @@ const dropDown = keyframes`
   `;
 export const li = styled.li`
   animation: ${dropDown} 1s forwards;
-  color: ${color.green};
+  color: ${color.lightestSlate};
   padding: 1rem;
   font-size: 14px;
   opacity: 0;
   animation-delay: ${({ delay }) => `${delay}s`};
+  ${fonts.mono}
 
   &:hover {
     cursor: pointer;
   }
+`;
+
+export const span = styled.span`
+  color: ${color.green};
+  font-size: 13px;
+  padding-right: 0.3rem;
 `;
 
 export const hamburgerContainer = styled.div`
@@ -87,6 +94,8 @@ export const hamburgerContainer = styled.div`
 
 export const resume = styled.div`
   display: none;
+  animation: ${fadeUp} 1s forwards;
+  ${fonts.mono}
 
   @media ${device.tablet} {
     display: block;

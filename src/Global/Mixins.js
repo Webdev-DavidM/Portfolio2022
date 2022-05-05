@@ -10,8 +10,9 @@ export const inner = (maxWidth = null) => css`
   width: 100%;
 `;
 
-export const button = () => css`
-  padding: 0.5rem 1rem;
+export const button = (padding = { padding: '.5rem' }) => css`
+  ${padding}
+  ${console.log(padding)}
   border-radius: 4px;
   font-size: 14px;
   background-color: none;
@@ -26,14 +27,19 @@ export const flexContainer = (verticalPosition = null) => css`
   ${verticalPosition};
 `;
 
-export const section = () => css`
-  max-width: 1400px;
+export const section = (width) => css`
   min-height: 500px;
   margin-top: 80px;
   padding: 2rem;
 
   @media ${device.tablet} {
     padding: 8rem;
-    width: 1200px;
+    ${width};
   }
+`;
+
+export const paragraph = css`
+  font-size: 18px;
+  margin: 2rem 0;
+  font-weight: 400;
 `;

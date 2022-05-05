@@ -1,4 +1,5 @@
 import { css } from 'styled-components';
+import { colors } from '../Variables';
 
 export const Shared = css`
   /**

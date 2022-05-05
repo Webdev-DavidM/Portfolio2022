@@ -19,24 +19,20 @@ export const TopLevel = css`
     display: flex;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: ${color.green};
+    font-weight: 400;
+    font-size: 18px;
+    color: ${color.lightestSlate};
     height: 100%;
     justify-content: space-between;
     line-height: 1.4;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: ${color.darkNavy};
+    background-color: ${color.navy};
   }
 
   body.is-active {
     overflow: hidden;
-  }
-
-  #gatsby-focus-wrapper {
-    position: relative;
   }
 
   * {

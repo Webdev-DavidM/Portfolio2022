@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import { color, fonts } from '../Global/Variables';
 import { device } from '../Global/Breakpoints';
-import { flexContainer, section } from '../Global/Mixins';
+import { flexContainer, paragraph, section } from '../Global/Mixins';
 
 export const sectionContainer = styled.div`
   //Not i have to pass in css in js format
@@ -9,7 +9,7 @@ export const sectionContainer = styled.div`
 `;
 
 export const intro = styled.div`
-  ${section}
+  ${section({ width: '1200px' })}
 `;
 
 const fadeUp = keyframes`
@@ -57,7 +57,6 @@ export const job = styled.h2`
 
 export const description = styled.p`
   animation: ${fadeUp} 1s forwards;
-  color: ${color.slate};
   opacity: 0;
   animation-delay: 0.4s;
 `;

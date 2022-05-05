@@ -8,7 +8,7 @@ export const sectionContainer = styled.div`
 `;
 
 export const about = styled.div`
-  ${section}
+  ${section({ width: '1200px' })}
 `;
 
 export const fade = styled.h2`

@@ -99,7 +99,7 @@ export const resume = styled.div`
 
   @media ${device.tablet} {
     display: block;
-    ${button}
+    ${button({ padding: '.7rem' })}
   }
 `;
 

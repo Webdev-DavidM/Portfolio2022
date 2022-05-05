@@ -1,6 +1,5 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import * as Styled from './experience.styles';
-import { debounce, throttle } from 'lodash';
 import {
   Link,
   DirectLink,
@@ -10,6 +9,7 @@ import {
   scrollSpy,
   scroller,
 } from 'react-scroll';
+import Header from '../SectionHeader/Header';
 
 export default function Experience() {
   const [animateInView, setAnimateInView] = useState(false);
@@ -29,13 +29,15 @@ export default function Experience() {
   useEffect(() => {
     sectionInView();
   }, []);
-
   return (
     <Element name="experience" className="element">
-      <Styled.container ref={elementPosition}>
-        Experience
-        <Styled.fade inView={animateInView}>Animate</Styled.fade>
-      </Styled.container>
+      <Styled.fade inView={animateInView}>
+        <Styled.sectionContainer ref={elementPosition}>
+          <Styled.experience>
+            <Header title="Where I've worked" number="02." />
+          </Styled.experience>
+        </Styled.sectionContainer>
+      </Styled.fade>
     </Element>
   );
 }

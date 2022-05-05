@@ -36,7 +36,7 @@ export const flexContainer = (verticalPosition = null) => css`
 
 export const section = (width) => css`
   min-height: 500px;
-  margin-top: 30vh;
+
   padding: 2rem;
 
   @media ${device.tablet} {

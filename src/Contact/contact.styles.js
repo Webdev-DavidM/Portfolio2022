@@ -4,12 +4,13 @@ import { device } from '../Global/Breakpoints';
 import { flexContainer, section, button, paragraph } from '../Global/Mixins';
 
 export const sectionContainer = styled.div`
-  ${flexContainer};
+  ${flexContainer({ height: '100vh' })};
 `;
 
 export const contact = styled.div`
   ${section({ width: '1000px' })};
   text-align: center;
+  margin-top: 20vh;
 `;
 
 export const number = styled.span`
@@ -41,7 +42,7 @@ export const contactButton = styled.button`
 `;
 
 export const fade = styled.div`
-  transition: opacity 3s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
   opacity: ${({ inView }) => (inView ? '1' : '0')};
-  animation-delay: 1s;
+  animation-delay: 2s;
 `;

@@ -10,6 +10,7 @@ export const sectionContainer = styled.div`
 
 export const intro = styled.div`
   ${section({ width: '1200px' })}
+  margin-top: 30vh;
 `;
 
 const fadeUp = keyframes`

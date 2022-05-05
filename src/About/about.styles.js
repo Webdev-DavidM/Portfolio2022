@@ -12,6 +12,7 @@ export const about = styled.div`
   display: flex;
   flex-wrap: wrap;
   color: ${color.slate};
+  margin-top: 20vh;
 `;
 
 const move = (start, end) => keyframes`
@@ -30,7 +31,7 @@ export const description = styled.p`
   ${paragraph};
   margin: 2rem 0 0 0;
   animation: ${move('-200px', '0')} 2s forwards;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
   opacity: 0;
 
   @media ${device.tablet} {
@@ -62,6 +63,6 @@ export const li = styled.li`
 `;
 
 export const fade = styled.div`
-  transition: all 1.4s ease-in;
+  transition: all 1.4s ease-in-out;
   opacity: ${({ inView }) => (inView ? '1' : '0')};
 `;

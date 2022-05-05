@@ -12,7 +12,7 @@ export const work = styled.div`
 `;
 
 export const fade = styled.div`
-  transition: all 3s ease-in;
+  transition: all 2s ease-in;
   opacity: ${({ inView }) => (inView ? '1' : '0')};
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 `;

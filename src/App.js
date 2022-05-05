@@ -37,7 +37,7 @@ function App() {
           <Experience />
           <Work />
           <Contact />
-          <Footer />
+          {/* <Footer /> */}
         </>
       )}
     </div>

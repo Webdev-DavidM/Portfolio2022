@@ -30,13 +30,13 @@ export const button = (padding = { padding: '.5rem' }) => css`
 export const flexContainer = (verticalPosition = null) => css`
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 80vh;
   ${verticalPosition};
 `;
 
 export const section = (width) => css`
   min-height: 500px;
-  margin-top: 80px;
+  margin-top: 30vh;
   padding: 2rem;
 
   @media ${device.tablet} {

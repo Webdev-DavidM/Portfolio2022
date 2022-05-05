@@ -23,6 +23,7 @@ export const subtitle = styled.span`
   ${fonts.mono};
   font-size: 19px;
   color: ${color.slate};
+  letter-spacing: -1px;
 `;
 
 export const title = styled.h3`

@@ -56,6 +56,7 @@ export const job = styled.h2`
 `;
 
 export const description = styled.p`
+  color: ${color.slate};
   animation: ${fadeUp} 1s forwards;
   opacity: 0;
   animation-delay: 0.4s;

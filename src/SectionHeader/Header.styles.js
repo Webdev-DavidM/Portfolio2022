@@ -4,6 +4,7 @@ import { color, fonts } from '../Global/Variables';
 export const Header = styled.div`
   display: flex;
   align-items: center;
+  width: 100%;
 `;
 
 export const number = styled.div`

@@ -4,7 +4,7 @@ import GlobalStyles from './Global/CSS';
 import Nav from './Nav/Nav';
 import About from './About/About';
 import Experience from './Experience/Experience';
-import Work from './Work/Work';
+import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 import Intro from './Intro/Intro';
@@ -35,7 +35,7 @@ function App() {
           <Intro />
           <About />
           <Experience />
-          <Work />
+          <Projects />
           <Contact />
           {/* <Footer /> */}
         </>

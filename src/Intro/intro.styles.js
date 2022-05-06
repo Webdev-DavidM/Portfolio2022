@@ -5,8 +5,7 @@ import { flexContainer, paragraph, section } from '../Global/Mixins';
 
 export const sectionContainer = styled.div`
   //Not i have to pass in css in js format
-  ${flexContainer({ alignItems: 'center' })}
-  height: 100vh;
+  ${flexContainer({ alignItems: 'center', height: '100vh' })}
 `;
 
 export const intro = styled.div`

@@ -45,7 +45,6 @@ export const ul = styled.ul`
     animation-delay: 1s;
     width: 30%;
     padding: 0 2rem;
-    margin-top: 0;
   }
 `;
 export const li = styled.li`

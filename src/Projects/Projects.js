@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import * as Styled from './work.styles';
+import * as Styled from './Projects.styles';
 import {
   Link,
   DirectLink,

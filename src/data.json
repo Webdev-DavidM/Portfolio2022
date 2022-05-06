@@ -1,0 +1,37 @@
+{
+  "experience": [
+    {
+      "company": "collective",
+      "role": "front end developer",
+      "date": "July - Decmeber 2015",
+      "detailsofRole": [
+        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
+        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
+        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
+        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery"
+      ]
+    },
+    {
+      "company": "ocado",
+      "role": "front end developer",
+      "date": "July - Decmeber 2015",
+      "detailsofRole": [
+        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
+        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
+        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
+        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery"
+      ]
+    },
+    {
+      "company": "human",
+      "role": "front end developer",
+      "date": "July - Decmeber 2015",
+      "detailsofRole": [
+        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
+        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
+        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
+        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery"
+      ]
+    }
+  ]
+}

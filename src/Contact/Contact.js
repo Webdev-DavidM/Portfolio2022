@@ -9,10 +9,12 @@ import {
   scrollSpy,
   scroller,
 } from 'react-scroll';
+import data from '../data.json';
 
 export default function Contact() {
   const [animateInView, setAnimateInView] = useState(false);
   const elementPosition = useRef(null);
+  console.log(data);
 
   const sectionInView = () => {
     window.addEventListener('scroll', () => {

@@ -66,6 +66,12 @@ export default function Nav() {
       <Styled.resume>
         <Styled.link>Resume</Styled.link>
       </Styled.resume>
+      <Styled.blurredBackground
+        sideMenu={showSideMenu}
+      ></Styled.blurredBackground>
+
+      {/* Mobile side menu */}
+
       <Styled.mobileSideNavBar sideMenu={showSideMenu}>
         {showSideMenu ? (
           // i have created separate components for each animation as an animation is only run once when it enters the
@@ -74,6 +80,26 @@ export default function Nav() {
         ) : (
           <MenuCloseCross closeMenu={setShowSideMenu} />
         )}
+        <Styled.ulSideMenu>
+          {links.map((link, index) => (
+            <Styled.liSideMenu
+              delay={`0.${index}`}
+              key={link}
+              className={link.toLowerCase()}
+              to={link.toLowerCase()}
+              onClick={() => {
+                scrollTo(link.toLowerCase());
+                setShowSideMenu(false);
+              }}
+            >
+              <Styled.spanSideMenu>0{index + 1}.</Styled.spanSideMenu>
+              {link}
+            </Styled.liSideMenu>
+          ))}
+        </Styled.ulSideMenu>
+        <Styled.resumeSideMenu>
+          <Styled.link>Resume</Styled.link>
+        </Styled.resumeSideMenu>
       </Styled.mobileSideNavBar>
     </Styled.navContainer>
   );

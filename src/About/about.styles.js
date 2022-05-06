@@ -12,7 +12,6 @@ export const about = styled.div`
   display: flex;
   flex-wrap: wrap;
   color: ${color.slate};
-  margin-top: 20vh;
 `;
 
 const move = (start, end) => keyframes`
@@ -39,18 +38,23 @@ export const description = styled.p`
   }
 `;
 export const ul = styled.ul`
+  margin-top: 2rem;
+
   @media ${device.tablet} {
     animation: ${move('200px', '0')} 1.4s forwards;
     animation-delay: 1s;
     width: 30%;
     padding: 0 2rem;
+    margin-top: 0;
   }
 `;
 export const li = styled.li`
   ${fonts.mono};
   font-size: 14px;
+
   position: relative;
   padding: 0 1.5rem 0.5rem 1.5rem;
+  color: ${color.lightSlate};
 
   &::before {
     content: '▹';

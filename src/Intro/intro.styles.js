@@ -6,11 +6,11 @@ import { flexContainer, paragraph, section } from '../Global/Mixins';
 export const sectionContainer = styled.div`
   //Not i have to pass in css in js format
   ${flexContainer({ alignItems: 'center' })}
+  height: 100vh;
 `;
 
 export const intro = styled.div`
   ${section({ width: '1200px' })}
-  margin-top: 30vh;
 `;
 
 const fadeUp = keyframes`
@@ -35,7 +35,7 @@ export const green = styled.p`
 export const name = styled.h2`
   font-size: 40px;
   animation: ${fadeUp} 1s forwards;
-  color: ${color.lightSlate};
+  color: ${color.lightestSlate};
   opacity: 0;
   animation-delay: 0.2s;
 
@@ -47,7 +47,7 @@ export const name = styled.h2`
 export const job = styled.h2`
   font-size: 40px;
   animation: ${fadeUp} 1s forwards;
-  color: ${color.slate};
+  color: ${color.lightSlate};
   opacity: 0;
   animation-delay: 0.3s;
 

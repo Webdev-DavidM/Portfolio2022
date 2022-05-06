@@ -15,7 +15,7 @@ export const number = styled.div`
 `;
 
 export const title = styled.span`
-  color: ${color.lightSlate};
+  color: ${color.lightestSlate};
   font-size: 28px;
   font-family: ${fonts.main};
   font-weight: 700;

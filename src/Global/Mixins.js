@@ -30,7 +30,7 @@ export const button = (padding = { padding: '.5rem' }) => css`
 export const flexContainer = (verticalPosition = null) => css`
   display: flex;
   justify-content: center;
-  height: 80vh;
+
   ${verticalPosition};
 `;
 

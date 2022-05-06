@@ -47,6 +47,11 @@ export const icon = styled.div`
   width: 30px;
   border-radius: 50%;
   overflow: hidden;
+
+  @media ${device.tablet} {
+    height: 40px;
+    width: 40px;
+  }
 `;
 
 const dropDown = keyframes`
@@ -98,23 +103,66 @@ export const resume = styled.div`
   display: none;
   animation: ${fadeUp} 1s forwards;
   ${fonts.mono}
+  ${button({ padding: '.7rem' })}
 
   @media ${device.tablet} {
     display: block;
-    ${button({ padding: '.7rem' })}
   }
 `;
 
 export const link = styled.a``;
 
+export const blurredBackground = styled.div`
+  position: fixed;
+  transition: all 0.2s ease-in-out;
+  height: ${({ sideMenu }) => (sideMenu ? '100vh' : '0')};
+  backdrop-filter: blur(8px);
+  top: 0;
+  left: 0;
+  width: ${({ sideMenu }) => (sideMenu ? '100%' : '0')};
+  z-index: 2000;
+`;
+
 export const mobileSideNavBar = styled.div`
   position: absolute;
-  width: 80%;
+  width: 75%;
   height: 100vh;
   top: 0;
   padding: 1rem;
   z-index: 3000;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
   background-color: ${color.lightNavy};
   transition: right 0.8s ease-in-out;
   right: ${({ sideMenu }) => (sideMenu ? '0' : '-80%')};
+`;
+
+export const ulSideMenu = styled.ul``;
+
+export const resumeSideMenu = styled.div`
+  animation: ${fadeUp} 1s forwards;
+  ${fonts.mono};
+  margin: 2rem 5rem;
+  ${button({ padding: '.7rem' })}
+`;
+
+export const liSideMenu = styled.li`
+  color: ${color.lightestSlate};
+  padding: 1rem;
+  font-size: 18px;
+  ${fonts.mono}
+  transition:  color 0.3s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    color: ${color.green};
+  }
+`;
+
+export const spanSideMenu = styled.span`
+  display: block;
+  color: ${color.green};
+  margin: 1rem 0 0.5rem 0;
+  font-size: 14px;
 `;

@@ -44,7 +44,6 @@ export default function Experience() {
     (job) => job.company === selectedJob
   );
 
-  console.log(jobDetails[0].detailsofRole);
 
   return (
     <Element name="experience" className="element">

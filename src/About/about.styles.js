@@ -29,7 +29,7 @@ const move = (start, end) => keyframes`
 export const description = styled.p`
   ${paragraph};
   margin: 2rem 0 0 0;
-  animation: ${move('-200px', '0')} 2s forwards;
+  animation: ${move('-300px', '0')} 2s forwards;
   animation-delay: 0.5s;
   opacity: 0;
 
@@ -41,7 +41,7 @@ export const ul = styled.ul`
   margin-top: 2rem;
 
   @media ${device.tablet} {
-    animation: ${move('200px', '0')} 1.4s forwards;
+    animation: ${move('300px', '0')} 1.4s forwards;
     animation-delay: 1s;
     width: 30%;
     padding: 0 2rem;

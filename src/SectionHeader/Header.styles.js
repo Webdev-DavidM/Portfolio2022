@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { color, fonts } from '../Global/Variables';
+import { device } from '../Global/Breakpoints';
 
 export const Header = styled.div`
   display: flex;
@@ -16,14 +17,22 @@ export const number = styled.div`
 
 export const title = styled.span`
   color: ${color.lightestSlate};
-  font-size: 28px;
+  font-size: 20px;
   font-family: ${fonts.main};
   font-weight: 700;
+
+  @media ${device.tablet} {
+    font-size: 28px;
+  }
 `;
 
 export const line = styled.span`
   height: 2px;
-  width: 250px;
+  width: 100px;
   margin-left: 1rem;
   border-top: 1px ${color.slate} solid;
+
+  @media ${device.tablet} {
+    width: 250px;
+  }
 `;

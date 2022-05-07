@@ -9,6 +9,12 @@ export const sectionContainer = styled.div`
 `;
 
 export const intro = styled.div`
+  margin-top: 200px;
+
+  @media ${device.tablet} {
+    margin-top: 0;
+  }
+
   ${section({ width: '1200px' })}
 `;
 
@@ -32,7 +38,7 @@ export const green = styled.p`
 `;
 
 export const name = styled.h2`
-  font-size: 40px;
+  font-size: 30px;
   animation: ${fadeUp} 1s forwards;
   color: ${color.lightestSlate};
   opacity: 0;
@@ -44,7 +50,7 @@ export const name = styled.h2`
 `;
 
 export const job = styled.h2`
-  font-size: 40px;
+  font-size: 30px;
   animation: ${fadeUp} 1s forwards;
   color: ${color.lightSlate};
   opacity: 0;

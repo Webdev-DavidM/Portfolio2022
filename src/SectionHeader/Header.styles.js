@@ -21,7 +21,7 @@ export const title = styled.span`
   font-family: ${fonts.main};
   font-weight: 700;
 
-  @media ${device.tablet} {
+  @media ${device.desktop} {
     font-size: 28px;
   }
 `;

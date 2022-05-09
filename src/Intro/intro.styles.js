@@ -45,6 +45,10 @@ export const name = styled.h2`
   animation-delay: 0.2s;
 
   @media ${device.tablet} {
+    font-size: 45px;
+  }
+
+  @media ${device.desktop} {
     font-size: 60px;
   }
 `;
@@ -57,6 +61,10 @@ export const job = styled.h2`
   animation-delay: 0.3s;
 
   @media ${device.tablet} {
+    font-size: 45px;
+  }
+
+  @media ${device.desktop} {
     font-size: 60px;
   }
 `;

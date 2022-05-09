@@ -11,7 +11,7 @@ export const color = {
   lightSlate: '#a8b2d1',
   lightestSlate: '#ccd6f6',
   green: '#64ffda',
-  greenTint: 'rgba(100, 255, 218, 0.1)',
+  greenTint: 'rgba(100, 255, 218, 0.5)',
   pink: '#f57dff',
   blue: '#57cbff',
   red: 'red',

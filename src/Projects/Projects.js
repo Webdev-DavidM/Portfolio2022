@@ -10,6 +10,8 @@ import {
   scroller,
 } from 'react-scroll';
 import Header from '../SectionHeader/Header';
+import Image from '../Images/testImage.jpg';
+import data from '../data.json';
 
 export default function Work() {
   const [animateInView, setAnimateInView] = useState(false);
@@ -29,13 +31,34 @@ export default function Work() {
   useEffect(() => {
     sectionInView();
   }, []);
+
+  console.log(data.projects);
   return (
     <Element name="work" className="element">
       <Styled.fade inView={animateInView}>
         <Styled.sectionContainer ref={elementPosition}>
-          <Styled.work>
+          <Styled.projectContainer>
             <Header title="Some things I've built" number="03." />
-          </Styled.work>
+            {data.projects.map((project, index) => (
+              <Styled.project key={index + 1}>
+                <Styled.projectImageContainer>
+                  <Styled.image src={Image} />
+                  <Styled.imageOverlay />
+                </Styled.projectImageContainer>
+                <Styled.projectDetails projectNumber={index}>
+                  <Styled.subtitle>Featured Project</Styled.subtitle>
+                  <Styled.title>{project.name}</Styled.title>
+                  <Styled.projectDescription>
+                    {project.description}
+                  </Styled.projectDescription>
+                  <Styled.techDetails>
+                    <Styled.tech></Styled.tech>
+                  </Styled.techDetails>
+                  <Styled.socialLinks></Styled.socialLinks>
+                </Styled.projectDetails>
+              </Styled.project>
+            ))}
+          </Styled.projectContainer>
         </Styled.sectionContainer>
       </Styled.fade>
     </Element>

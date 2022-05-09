@@ -33,5 +33,22 @@
         "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery"
       ]
     }
+  ],
+  "projects": [
+    {
+      "name": "audiophile",
+      "description": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
+      "tech": ["react", "react", "react", "react", "react"]
+    },
+    {
+      "name": "audiophile",
+      "description": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
+      "tech": ["react", "react", "react", "react", "react"]
+    },
+    {
+      "name": "audiophile",
+      "description": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
+      "tech": ["react", "react", "react", "react", "react"]
+    }
   ]
 }

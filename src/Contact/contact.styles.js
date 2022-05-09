@@ -23,18 +23,19 @@ export const number = styled.span`
 export const subtitle = styled.span`
   ${fonts.mono};
   font-size: 19px;
-  color: ${color.slate};
+  color: ${color.lighterSlate};
   letter-spacing: -1px;
 `;
 
 export const title = styled.h3`
   margin-top: 1rem;
-  color: ${color.lightSlate};
+  color: ${color.lightestSlate};
   font-size: 28px;
 `;
 
 export const text = styled.p`
   ${paragraph}
+  color:${color.slate};
 `;
 
 export const contactButton = styled.button`

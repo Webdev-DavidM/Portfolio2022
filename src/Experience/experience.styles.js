@@ -41,7 +41,7 @@ export const li = styled.li`
   display: inline-block;
   ${fonts.mono};
   font-size: 14px;
-  color: ${({ active }) => (active ? `${color.green}` : `${color.slate}`)};
+  color: ${({ active }) => (active ? `${color.green}` : `${color.lightSlate}`)};
 
   width: 100%;
   transition: all 0.3s ease-in-out;
@@ -88,12 +88,13 @@ export const company = styled.span`
 
 export const dates = styled.div`
   ${fonts.mono};
-  color: ${color.slate};
-  font-size: 16px;
+  color: ${color.lighterSlate};
+  font-size: 15px;
   margin: 0.5rem 0;
 `;
 
 export const jobDetailsUl = styled.ul``;
+
 export const jobDetailsLi = styled.li`
   padding: 1rem 0;
   color: ${color.slate};

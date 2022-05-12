@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import ExternalLinks from '../ExternalLinks/ExternalLinks';
 import * as Styled from './contact.styles';
 import {
   Link,
@@ -14,7 +15,6 @@ import data from '../data.json';
 export default function Contact() {
   const [animateInView, setAnimateInView] = useState(false);
   const elementPosition = useRef(null);
-  console.log(data);
 
   const sectionInView = () => {
     window.addEventListener('scroll', () => {
@@ -44,6 +44,7 @@ export default function Contact() {
               say hi, I’ll try my best to get back to you!
             </Styled.text>
             <Styled.contactButton>Say Hello</Styled.contactButton>
+            <ExternalLinks />
           </Styled.contact>
         </Styled.sectionContainer>
       </Styled.fade>

@@ -6,7 +6,6 @@ import About from './About/About';
 import Experience from './Experience/Experience';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
-import Footer from './Footer/Footer';
 import Intro from './Intro/Intro';
 import SplashPage from './SplashPage/SplashPage';
 
@@ -22,7 +21,6 @@ function App() {
       hideSplash();
       // }, 13000);
     }, 0);
-    
   }, []);
 
   return (
@@ -38,7 +36,6 @@ function App() {
           <Experience />
           <Projects />
           <Contact />
-          {/* <Footer /> */}
         </>
       )}
     </div>

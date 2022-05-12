@@ -34,6 +34,10 @@ export default function Experience() {
     setSelectedJob(data.experience[0].company);
   }, []);
 
+  // This code below will create a highlighted line which has a highlighted part, it is dynamic
+  // so if another job is added then the highlighted line will be the right size for the number of job
+  // ie 3 jobs the line will 33%, 4 the line will be 25% etc
+
   let index = data.experience.findIndex(
     (job) => job.company === `${selectedJob}`
   );
@@ -43,7 +47,6 @@ export default function Experience() {
   const jobDetails = data.experience.filter(
     (job) => job.company === selectedJob
   );
-
 
   return (
     <Element name="experience" className="element">

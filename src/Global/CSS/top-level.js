@@ -26,6 +26,7 @@ export const TopLevel = css`
     justify-content: space-between;
     line-height: 1.4;
     overflow-x: hidden;
+    position: relative;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: ${color.navy};

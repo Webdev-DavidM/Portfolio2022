@@ -1,5 +1,5 @@
 import React from 'react';
-import * as Styled from './intro.styles';
+import * as Styled from './Intro.styles';
 
 export default function Intro() {
   return (

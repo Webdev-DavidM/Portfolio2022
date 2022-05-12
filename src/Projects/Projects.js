@@ -48,13 +48,17 @@ export default function Work() {
                 <Styled.projectDetails projectNumber={index}>
                   <Styled.subtitle>Featured Project</Styled.subtitle>
                   <Styled.title>{project.name}</Styled.title>
-                  <Styled.projectDescription>
+                  <Styled.projectDescription projectNumber={index}>
                     {project.description}
                   </Styled.projectDescription>
-                  <Styled.techDetails>
-                    <Styled.tech></Styled.tech>
+                  <Styled.techDetails projectNumber={index}>
+                    {project.tech.map((t) => (
+                      <Styled.tech projectNumber={index}>{t}</Styled.tech>
+                    ))}
                   </Styled.techDetails>
-                  <Styled.socialLinks></Styled.socialLinks>
+                  <Styled.githubLink href={project.githubLink}>
+                    Visit github
+                  </Styled.githubLink>
                 </Styled.projectDetails>
               </Styled.project>
             ))}

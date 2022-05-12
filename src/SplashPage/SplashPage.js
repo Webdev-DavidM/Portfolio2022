@@ -1,5 +1,5 @@
 import React from 'react';
-import * as Styled from './splashpage.styles';
+import * as Styled from './Splashpage.styles';
 
 export default function SplashPage({ showSplash }) {
   const tech = [

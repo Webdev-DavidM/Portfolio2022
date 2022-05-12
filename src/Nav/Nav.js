@@ -7,6 +7,7 @@ import MenuOpenCross from './animations/MenuOpenCross';
 import MenuCloseCross from './animations/MenuCloseCross';
 import { color } from '../Global/Variables';
 import logo from '../Images/photo.jpeg';
+import Resume from '../resume/resume.pdf';
 
 export default function Nav() {
   const [showSideMenu, setShowSideMenu] = useState(false);
@@ -64,7 +65,9 @@ export default function Nav() {
         <MenuIcon fontSize="large" htmlColor={`${color.green}`} />
       </Styled.hamburgerContainer>
       <Styled.resume>
-        <Styled.link>Resume</Styled.link>
+        <Styled.link href={Resume} target="_blank" rel="noreferrer">
+          Resume
+        </Styled.link>
       </Styled.resume>
       <Styled.blurredBackground
         sideMenu={showSideMenu}
@@ -98,7 +101,9 @@ export default function Nav() {
           ))}
         </Styled.ulSideMenu>
         <Styled.resumeSideMenu>
-          <Styled.link>Resume</Styled.link>
+          <Styled.link href={Resume} target="_blank" rel="noreferrer">
+            Resume
+          </Styled.link>
         </Styled.resumeSideMenu>
       </Styled.mobileSideNavBar>
     </Styled.navContainer>

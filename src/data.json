@@ -38,17 +38,20 @@
     {
       "name": "audiophile",
       "description": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
-      "tech": ["react", "react", "react", "react", "react"]
+      "tech": ["react", "react", "react", "react", "react"],
+      "githubLink": "https://github.com/Webdev-DavidM/photosnap-gatsby_contentful"
     },
     {
       "name": "audiophile",
       "description": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
-      "tech": ["react", "react", "react", "react", "react"]
+      "tech": ["react", "react", "react", "react", "react"],
+      "githubLink": "https://github.com/Webdev-DavidM/photosnap-gatsby_contentful"
     },
     {
       "name": "audiophile",
       "description": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
-      "tech": ["react", "react", "react", "react", "react"]
+      "tech": ["react", "react", "react", "react", "react"],
+      "githubLink": "https://github.com/Webdev-DavidM/photosnap-gatsby_contentful"
     }
   ]
 }

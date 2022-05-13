@@ -38,7 +38,7 @@ export const text = styled.p`
   color:${color.slate};
 `;
 
-export const contactButton = styled.button`
+export const contactButton = styled.a`
   ${button({ padding: '1.2rem' })}
 `;
 

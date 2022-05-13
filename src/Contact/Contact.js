@@ -37,12 +37,14 @@ export default function Contact() {
           <Styled.contact>
             <Styled.number>04.</Styled.number>
             <Styled.subtitle>What's Next?</Styled.subtitle>
-            <Styled.title>Get In Touch</Styled.title>
+            <Styled.title>Get in touch</Styled.title>
             <Styled.text>
               I am looking for my next challenge, please contact on one of the
               channels below, thanks
             </Styled.text>
-            <Styled.contactButton>Say Hello</Styled.contactButton>
+            <Styled.contactButton href="mailto:davidm.webdeveloper@gmail.com">
+              Email me
+            </Styled.contactButton>
             <ExternalLinks />
           </Styled.contact>
         </Styled.sectionContainer>

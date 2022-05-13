@@ -1,5 +1,19 @@
 import styled, { keyframes } from 'styled-components';
-import { color } from '../Global/Variables';
+import { color, fonts } from '../Global/Variables';
+
+export const skipIntro = styled.button`
+  ${fonts.mono};
+  color: ${color.green};
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 14px;
+  z-index: 4000;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
 
 export const splashPage = styled.div`
   position: absolute;

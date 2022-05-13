@@ -1,7 +1,7 @@
 import React from 'react';
 import * as Styled from './Splashpage.styles';
 
-export default function SplashPage({ showSplash }) {
+export default function SplashPage({ showSplash, skipIntro }) {
   const tech = [
     { tech: 'HTML', delay: '0', scale: 1 },
     { tech: 'CSS', delay: '1', scale: 1 },
@@ -22,8 +22,13 @@ export default function SplashPage({ showSplash }) {
     { tech: 'SQL', delay: '10.1', scale: 30 },
   ];
 
+  console;
+
   return (
     <Styled.splashPage showSplash={showSplash}>
+      <Styled.skipIntro onClick={() => skipIntro()}>
+        Skip Intro
+      </Styled.skipIntro>
       {tech.map((t, index) => (
         <>
           <Styled.tech key={index} delay={t.delay} scale={t.scale}>

@@ -19,14 +19,13 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       hideSplash();
-      // }, 13000);
-    }, 0);
+    }, 13000);
   }, []);
 
   return (
     <div>
       <GlobalStyles />
-      <SplashPage showSplash={showSplash} />
+      <SplashPage showSplash={showSplash} skipIntro={hideSplash} />
       <Header />
       {!showSplash && (
         <>

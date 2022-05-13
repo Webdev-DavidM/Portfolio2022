@@ -6,7 +6,7 @@ export default function Header() {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>My Title</title>
+        <title>David Mulholland web developer</title>
         <link rel="canonical" href="http://mysite.com/example" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

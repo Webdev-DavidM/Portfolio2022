@@ -7,13 +7,11 @@ export default function Intro() {
       <Styled.intro>
         <Styled.green>Hi, my name is</Styled.green>
         <Styled.name>David Mulholland</Styled.name>
-        <Styled.job>Full stack developer</Styled.job>
+        <Styled.job>Front end developer</Styled.job>
         <Styled.description>
-          survived not only five centuries, but also the leap into electronic
-          typesetting, remaining essentially unchanged. It was popularised in
-          the 1960s with the release of Letraset sheets containing Lorem Ipsum
-          passages, and more recently with desktop publishing software like
-          Aldus PageMaker including versions of Lorem Ipsum.
+          I enjoy combining technology and creativity to build websites and
+          applications. I love learning new technologies to improve the user
+          experience and making development faster and more efficent.
         </Styled.description>
       </Styled.intro>
     </Styled.sectionContainer>

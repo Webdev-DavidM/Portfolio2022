@@ -18,8 +18,12 @@ export default function About() {
     'Javascript (ES6+)',
     'React',
     'Redux',
-    'Styled components',
+    'Styled components and SASS',
     'Typescript',
+    'Node',
+    'React testing library',
+    'GraphQL',
+    'Gatsby',
   ];
 
   const sectionInView = () => {
@@ -43,18 +47,17 @@ export default function About() {
           <Styled.about>
             <Header title="About me" number="01." />
             <Styled.description>
-              Hello! My name is Brittany and I enjoy creating things that live
-              on the internet. My interest in web development started back in
-              2012 when I decided to try editing custom Tumblr themes — turns
-              out hacking together a custom reblog button taught me a lot about
-              HTML & CSS! Fast-forward to today, and I’ve had the privilege of
-              working at an advertising agency, a start-up, a huge corporation,
-              and a student-led design studio. My main focus these days is
-              building accessible, inclusive products and digital experiences at
-              Upstatement for a variety of clients. I also recently launched a
-              course that covers everything you need to build a web app with the
-              Spotify API using Node & React. Here are a few technologies I’ve
-              been working with recently:
+              I am passionate about using technology to solve problems
+              creatively. I am a strong communicator gained from my time as a
+              mortgage advisor and various customer service roles. I am a fast
+              learner as shown by my multiple qualifications gained towards
+              becoming a developer.
+              <br />
+              <br />I have gained experience as a developer working for a
+              charity, a large retail organisation and currently a creative
+              digital agency. During this time I have continued to learn new
+              technologies such as Gatsby, Contentful, Styled components, Docker
+              and testing with React testing library and Jest.
             </Styled.description>
             <Styled.ul>
               {technologies.map((tech) => (

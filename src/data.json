@@ -1,57 +1,70 @@
 {
   "experience": [
     {
-      "company": "collective",
-      "role": "front end developer",
-      "date": "July - Decmeber 2015",
+      "company": "Collective World Ltd",
+      "role": "Junior Front end developer",
+      "date": "July 2021-current - permanent",
       "detailsofRole": [
-        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
-        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
-        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
-        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery"
+        "Working with a wide variety of client websites including Hyundai UK national website.",
+        "Creating bespoke pages for new Hyundai campaigns and making amendments to existing pages.",
+        "Using various CMS's to update content.",
+        "Using SASS with BEM to create maintainable,scalable CSS and styled components on more recent projects using BrowserStack to test on all devices and platforms.",
+        "Updating and designing the Hyundai configurator application using Gatsby and Redux"
       ]
     },
     {
-      "company": "ocado",
-      "role": "front end developer",
-      "date": "July - Decmeber 2015",
+      "company": "Ocado",
+      "role": "Front end developer",
+      "date": "May 2021-July 2021 - contract",
       "detailsofRole": [
-        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
-        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
-        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
-        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery"
+        "Working with the design team to update keys part of the Ocado Fetch website using CSS, HTML and Contentful from XD designs from the Graphic design team.",
+        "Using Contentful, Trello, Abode Creative Suite and Slack to make a high volume amount of website updates to specified deadlines."
       ]
     },
     {
-      "company": "human",
+      "company": "Humanitarian Operations",
       "role": "front end developer",
-      "date": "July - Decmeber 2015",
+      "date": "March 2021-May 2021 - intern",
       "detailsofRole": [
-        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
-        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
-        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery",
-        "Developed and maintained code for in-house and client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery"
+        "Working in an agile team developing a new online store which will be used by the charity to sell their own products.",
+        "Using CSS, HTML and JS to build the front end.",
+        "My front-end Tech stack- CSS, HTML, Javascript."
       ]
     }
   ],
   "projects": [
     {
-      "name": "audiophile",
-      "description": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
-      "tech": ["react", "react", "react", "react", "react"],
-      "githubLink": "https://github.com/Webdev-DavidM/photosnap-gatsby_contentful"
+      "name": "Ecommerce audio shop app",
+      "description": "Full stack e commerce store designed from sketch designs, the MERN stack, react testing library and several additional NPM packages such as Formik and React transition group.",
+      "tech": ["React", "Typescript", "GraphQL", "MongoDB", "Node"],
+      "githubLink": "https://github.com/Webdev-DavidM/audiophile",
+      "projectLink": "http://audio-first-react-express.herokuapp.com/",
+      "image": "/images/audiophile.jpg"
     },
     {
-      "name": "audiophile",
-      "description": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
-      "tech": ["react", "react", "react", "react", "react"],
-      "githubLink": "https://github.com/Webdev-DavidM/photosnap-gatsby_contentful"
+      "name": "Invoice application",
+      "description": "An invoice application created from sketch designs uses React,Formik and React Transition Group to create a visually pleasing and slick experience for the user.",
+      "tech": ["React", "Formik", "React-Transition-Group"],
+      "githubLink": "https://github.com/Webdev-DavidM/invoice-app",
+      "projectLink": "https://webdev-davidm.github.io/invoice-app/",
+      "image": "/images/invoice.jpg"
+      
     },
     {
-      "name": "audiophile",
-      "description": "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
-      "tech": ["react", "react", "react", "react", "react"],
-      "githubLink": "https://github.com/Webdev-DavidM/photosnap-gatsby_contentful"
+      "name": "Photosnap website",
+      "description": "This website using Gatsby and Contentful as a headless CMS, and the API calls are made by GraphQL. This website with SASS with the BEM methodology.",
+      "tech": ["Gatsby", "Contentful", "GraphQL", "SASS with BEM"],
+      "githubLink": "https://github.com/Webdev-DavidM/photosnap-gatsby_contentful",
+      "projectLink": "https://github.com/Webdev-DavidM/photosnap-gatsby_contentful",
+      "image": "/images/photosnap.jpg"
+    },
+    {
+      "name": "React calculator",
+      "description": "This calculator was built as a project as part of the freeCodeCamp cirriculum. This project allowed me to combine many functions and use React prevstate and e.persist to make the project work.",
+      "tech": ["React", "Class-components"],
+      "githubLink": "https://github.com/Webdev-DavidM/react-calculator",
+      "projectLink": "https://webdev-davidm.github.io/react-calculator/",
+      "image": "/images/calculator.jpg"
     }
   ]
 }

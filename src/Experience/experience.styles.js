@@ -96,7 +96,7 @@ export const dates = styled.div`
 export const jobDetailsUl = styled.ul``;
 
 export const jobDetailsLi = styled.li`
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   color: ${color.slate};
   font-size: 16px;
 `;
@@ -141,8 +141,3 @@ export const fade = styled.div`
   opacity: ${({ inView }) => (inView ? '1' : '0')};
   animation-delay: 1s;
 `;
-
-
-
-
-

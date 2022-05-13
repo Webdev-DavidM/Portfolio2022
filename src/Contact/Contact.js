@@ -39,9 +39,8 @@ export default function Contact() {
             <Styled.subtitle>What's Next?</Styled.subtitle>
             <Styled.title>Get In Touch</Styled.title>
             <Styled.text>
-              Although I’m not currently looking for any new opportunities, my
-              inbox is always open. Whether you have a question or just want to
-              say hi, I’ll try my best to get back to you!
+              I am looking for my next challenge, please contact on one of the
+              channels below, thanks
             </Styled.text>
             <Styled.contactButton>Say Hello</Styled.contactButton>
             <ExternalLinks />

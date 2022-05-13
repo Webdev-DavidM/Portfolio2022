@@ -10,7 +10,6 @@ import {
   scroller,
 } from 'react-scroll';
 import Header from '../SectionHeader/Header';
-import Image from '../Images/testImage.jpg';
 import data from '../data.json';
 
 export default function Work() {
@@ -32,7 +31,6 @@ export default function Work() {
     sectionInView();
   }, []);
 
-  console.log(data.projects);
   return (
     <Element name="work" className="element">
       <Styled.fade inView={animateInView}>
@@ -42,7 +40,7 @@ export default function Work() {
             {data.projects.map((project, index) => (
               <Styled.project key={index + 1}>
                 <Styled.projectImageContainer>
-                  <Styled.image src={Image} />
+                  <Styled.image backgroundImage={project.image} />
                   <Styled.imageOverlay />
                 </Styled.projectImageContainer>
                 <Styled.projectDetails projectNumber={index}>
@@ -56,9 +54,20 @@ export default function Work() {
                       <Styled.tech projectNumber={index}>{t}</Styled.tech>
                     ))}
                   </Styled.techDetails>
-                  <Styled.githubLink href={project.githubLink}>
-                    Visit github
-                  </Styled.githubLink>
+                  <Styled.ButtonContainer>
+                    <Styled.Link
+                      href={project.githubLink}
+                      projectNumber={index}
+                    >
+                      Visit Project
+                    </Styled.Link>
+                    <Styled.Link
+                      href={project.projectLink}
+                      projectNumber={index}
+                    >
+                      Visit github
+                    </Styled.Link>
+                  </Styled.ButtonContainer>
                 </Styled.projectDetails>
               </Styled.project>
             ))}

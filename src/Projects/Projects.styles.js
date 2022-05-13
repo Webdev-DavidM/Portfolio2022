@@ -17,7 +17,7 @@ export const project = styled.li`
   margin: 2rem 0;
   min-height: 400px;
 
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     display: flex;
   }
 `;
@@ -26,7 +26,7 @@ export const projectImageContainer = styled.div`
   position: relative;
   order: 1;
 
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     width: 60%;
   }
 `;
@@ -42,7 +42,7 @@ export const imageOverlay = styled.div`
   z-index: 200;
   transition: background-color 0.2s ease-in-out;
 
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     display: block;
   }
 
@@ -52,7 +52,14 @@ export const imageOverlay = styled.div`
   }
 `;
 
-export const image = styled.img``;
+export const image = styled.div`
+  background-image: ${({ backgroundImage }) => `url('${backgroundImage}');`};
+  height: 330px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+`;
 
 export const projectDetails = styled.div`
   background-color: ${color.navyShadow};
@@ -63,7 +70,7 @@ export const projectDetails = styled.div`
   height: 100%;
   width: 100%;
 
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     padding: 1rem 0;
     width: 45%;
     order: ${({ projectNumber }) => (projectNumber % 2 == 0 ? `1` : `0`)};
@@ -95,7 +102,7 @@ export const projectDescription = styled.p`
   padding: 1rem;
   color: ${color.slate};
 
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     width: 450px;
     padding: 0.5rem;
     position: absolute;
@@ -107,10 +114,9 @@ export const projectDescription = styled.p`
 
 export const techDetails = styled.div`
   ${fonts.mono};
-  min-height: 50px;
 
-  @media ${device.tablet} {
-    margin-top: 110px;
+  @media ${device.laptop} {
+    margin-top: 120px;
     display: flex;
     flex-wrap: wrap;
     justify-content: ${({ projectNumber }) =>
@@ -131,14 +137,28 @@ export const tech = styled.span`
     padding-right: 0;
   }
 
-  @media ${device.tablet} {
+  @media ${device.laptop} {
     padding: ${({ projectNumber }) =>
       projectNumber % 2 === 0 ? `0.5rem 0.5rem 0 0;` : `0.5rem 0 0 0.5rem;`};
   }
 `;
 
-export const githubLink = styled.a`
+export const ButtonContainer = styled.div`
+  margin: 1rem 0;
+`;
+
+export const Link = styled.a`
   ${button({ padding: '.5rem' })}
+  margin: 1rem 0;
+
+  &:last-child {
+    margin-left: 0.5rem;
+  }
+
+  @media ${device.laptop} {
+    margin: ${({ projectNumber }) =>
+      projectNumber % 2 === 0 ? `-4rem 0 0 1rem ;` : `0 1rem 0 0;`};
+  }
 `;
 
 export const fade = styled.div`

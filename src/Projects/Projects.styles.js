@@ -54,7 +54,7 @@ export const imageOverlay = styled.div`
 
 export const image = styled.div`
   background-image: ${({ backgroundImage }) => `url('${backgroundImage}');`};
-  height: 330px;
+  height: 400px;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -87,6 +87,10 @@ export const subtitle = styled.p`
   color: ${color.green};
   margin: 0.5rem 0;
   font-size: 14px;
+
+  @media ${device.laptop} {
+    margin-top: 2rem;
+  }
 `;
 
 export const title = styled.h2`
@@ -107,7 +111,7 @@ export const projectDescription = styled.p`
     padding: 0.5rem;
     position: absolute;
     ${({ projectNumber }) => (projectNumber % 2 === 0 ? `right:0;` : `left:0;`)}
-    top: 60px;
+    top: 100px;
     z-index: 2000;
   }
 `;
@@ -116,7 +120,7 @@ export const techDetails = styled.div`
   ${fonts.mono};
 
   @media ${device.laptop} {
-    margin-top: 120px;
+    margin-top: 140px;
     display: flex;
     flex-wrap: wrap;
     justify-content: ${({ projectNumber }) =>

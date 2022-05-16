@@ -39,8 +39,8 @@ export default function Contact() {
             <Styled.subtitle>What's Next?</Styled.subtitle>
             <Styled.title>Get in touch</Styled.title>
             <Styled.text>
-              I am looking for my next challenge, please contact on one of the
-              channels below, thanks
+              I am looking for my next challenge, please contact me on one of
+              the channels below, thanks
             </Styled.text>
             <Styled.contactButton href="mailto:davidm.webdeveloper@gmail.com">
               Email me

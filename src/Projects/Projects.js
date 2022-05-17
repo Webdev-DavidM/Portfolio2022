@@ -38,38 +38,40 @@ export default function Work() {
           <Styled.projectContainer>
             <Header title="Some things I've built" number="03." />
             {data.projects.map((project, index) => (
-              <Styled.project key={index + 1}>
-                <Styled.projectImageContainer>
-                  <Styled.image backgroundImage={project.image} />
-                  <Styled.imageOverlay />
-                </Styled.projectImageContainer>
-                <Styled.projectDetails projectNumber={index}>
-                  <Styled.subtitle>Featured Project</Styled.subtitle>
-                  <Styled.title>{project.name}</Styled.title>
-                  <Styled.projectDescription projectNumber={index}>
-                    {project.description}
-                  </Styled.projectDescription>
-                  <Styled.techDetails projectNumber={index}>
-                    {project.tech.map((t) => (
-                      <Styled.tech projectNumber={index}>{t}</Styled.tech>
-                    ))}
-                  </Styled.techDetails>
-                  <Styled.ButtonContainer>
-                    <Styled.Link
-                      href={project.githubLink}
-                      projectNumber={index}
-                    >
-                      Visit Project
-                    </Styled.Link>
-                    <Styled.Link
-                      href={project.projectLink}
-                      projectNumber={index}
-                    >
-                      Visit github
-                    </Styled.Link>
-                  </Styled.ButtonContainer>
-                </Styled.projectDetails>
-              </Styled.project>
+              <a href={project.projectLink}>
+                <Styled.project key={index + 1}>
+                  <Styled.projectImageContainer>
+                    <Styled.image backgroundImage={project.image} />
+                    <Styled.imageOverlay />
+                  </Styled.projectImageContainer>
+                  <Styled.projectDetails projectNumber={index}>
+                    <Styled.subtitle>Featured Project</Styled.subtitle>
+                    <Styled.title>{project.name}</Styled.title>
+                    <Styled.projectDescription projectNumber={index}>
+                      {project.description}
+                    </Styled.projectDescription>
+                    <Styled.techDetails projectNumber={index}>
+                      {project.tech.map((t) => (
+                        <Styled.tech projectNumber={index}>{t}</Styled.tech>
+                      ))}
+                    </Styled.techDetails>
+                    <Styled.ButtonContainer>
+                      <Styled.Link
+                        href={project.githubLink}
+                        projectNumber={index}
+                      >
+                        Visit Project
+                      </Styled.Link>
+                      <Styled.Link
+                        href={project.projectLink}
+                        projectNumber={index}
+                      >
+                        Visit github
+                      </Styled.Link>
+                    </Styled.ButtonContainer>
+                  </Styled.projectDetails>
+                </Styled.project>
+              </a>
             ))}
           </Styled.projectContainer>
         </Styled.sectionContainer>

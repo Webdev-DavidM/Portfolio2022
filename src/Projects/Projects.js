@@ -57,13 +57,13 @@ export default function Work() {
                     </Styled.techDetails>
                     <Styled.ButtonContainer>
                       <Styled.Link
-                        href={project.githubLink}
+                        href={project.projectLink}
                         projectNumber={index}
                       >
                         Visit Project
                       </Styled.Link>
                       <Styled.Link
-                        href={project.projectLink}
+                        href={project.githubLink}
                         projectNumber={index}
                       >
                         Visit github

@@ -56,7 +56,7 @@
       "description": "This website using Gatsby and Contentful as a headless CMS with API calls made using GraphQL. This website uses SASS with the BEM methodology for the styling.",
       "tech": ["Gatsby", "Contentful", "GraphQL", "SASS with BEM"],
       "githubLink": "https://github.com/Webdev-DavidM/photosnap-gatsby_contentful",
-      "projectLink": "https://github.com/Webdev-DavidM/photosnap-gatsby_contentful",
+      "projectLink": "https://photosnapgatsbycontentfulmaste.gatsbyjs.io/",
       "image": "/images/photosnap.jpg"
     },
     {

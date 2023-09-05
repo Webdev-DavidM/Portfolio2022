@@ -28,4 +28,4 @@ jobs:
           aws-region: eu-west-2
 
       - name: Deploy static site to S3 bucket
-        run: aws s3 sync ./build s3://portfolio-davidm-s3
+        run: aws s3 sync ./build s3://davidmulholland-developer.co.uk

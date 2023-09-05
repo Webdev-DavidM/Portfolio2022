@@ -1,14 +1,14 @@
-import styled, { keyframes } from 'styled-components';
-import { color, fonts } from '../Global/Variables';
-import { device } from '../Global/Breakpoints';
-import { flexContainer, section } from '../Global/Mixins';
+import styled, { keyframes } from "styled-components";
+import { color, fonts } from "../Global/Variables";
+import { device } from "../Global/Breakpoints";
+import { flexContainer, section } from "../Global/Mixins";
 
 export const sectionContainer = styled.div`
   ${flexContainer}
 `;
 
 export const experience = styled.div`
-  ${section({ width: '1100px' })}
+  ${section({ width: "1100px" })}
 `;
 
 export const workContainer = styled.div`
@@ -48,7 +48,7 @@ export const li = styled.li`
   text-align: center;
   padding: 1rem 0;
   background-color: ${({ active }) =>
-    active ? `${color.lightNavy}` : 'transparent'};
+    active ? `${color.lightNavy}` : "transparent"};
 
   &:hover {
     color: ${color.green};
@@ -117,7 +117,7 @@ export const line = styled.div`
   }
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     width: 33%;
     height: 2px;
@@ -138,6 +138,6 @@ export const line = styled.div`
 
 export const fade = styled.div`
   transition: all 2s ease-in-out;
-  opacity: ${({ inView }) => (inView ? '1' : '0')};
+  opacity: ${({ inView }) => (inView ? "1" : "0")};
   animation-delay: 1s;
 `;

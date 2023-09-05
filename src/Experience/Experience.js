@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
-import * as Styled from './Experience.styles';
+import React, { useState, useRef, useEffect } from "react";
+import * as Styled from "./experience.styles";
 import {
   Link,
   DirectLink,
@@ -8,10 +8,10 @@ import {
   animateScroll as scroll,
   scrollSpy,
   scroller,
-} from 'react-scroll';
-import Header from '../SectionHeader/Header';
-import data from '../data.json';
-import { array } from 'prop-types';
+} from "react-scroll";
+import Header from "../SectionHeader/Header";
+import data from "../data.json";
+import { array } from "prop-types";
 
 export default function Experience() {
   const [animateInView, setAnimateInView] = useState(false);
@@ -19,7 +19,7 @@ export default function Experience() {
   const [selectedJob, setSelectedJob] = useState();
 
   const sectionInView = () => {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       if (
         window.scrollY >
         elementPosition.current.offsetTop - elementPosition.current.clientHeight

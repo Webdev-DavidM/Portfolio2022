@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
-import * as Styled from './About.styles';
+import React, { useState, useRef, useEffect } from "react";
+import * as Styled from "./about.styles";
 import {
   Link,
   DirectLink,
@@ -8,26 +8,26 @@ import {
   animateScroll as scroll,
   scrollSpy,
   scroller,
-} from 'react-scroll';
-import Header from '../SectionHeader/Header';
+} from "react-scroll";
+import Header from "../SectionHeader/Header";
 
 export default function About() {
   const [animateInView, setAnimateInView] = useState(false);
   const elementPosition = useRef(null);
   const technologies = [
-    'Javascript (ES6+)',
-    'React',
-    'Redux',
-    'Styled components and SASS',
-    'Typescript',
-    'Node',
-    'React testing library',
-    'GraphQL',
-    'Gatsby',
+    "Javascript (ES6+)",
+    "React",
+    "Redux",
+    "Styled components and SASS",
+    "Typescript",
+    "Node",
+    "React testing library",
+    "GraphQL",
+    "Gatsby",
   ];
 
   const sectionInView = () => {
-    window.addEventListener('scroll', () => {
+    window.addEventListener("scroll", () => {
       if (
         window.scrollY >
         elementPosition.current.offsetTop - elementPosition.current.clientHeight

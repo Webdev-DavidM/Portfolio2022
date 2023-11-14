@@ -60,14 +60,6 @@
       "image": "/images/invoice.jpg"
     },
     {
-      "name": "Photosnap website",
-      "description": "This website using Gatsby and Contentful as a headless CMS with API calls made using GraphQL. This website uses SASS with the BEM methodology for the styling.",
-      "tech": ["Gatsby", "Contentful", "GraphQL", "SASS with BEM"],
-      "githubLink": "https://github.com/Webdev-DavidM/photosnap-gatsby_contentful",
-      "projectLink": "https://photosnapgatsbycontentfulmaste.gatsbyjs.io/",
-      "image": "/images/photosnap.jpg"
-    },
-    {
       "name": "React calculator",
       "description": "This calculator was built as a project as part of the freeCodeCamp cirriculum. This project allowed me to combine many functions and uses React prevstate and e.persist to make the project work.",
       "tech": ["React", "Class-components"],

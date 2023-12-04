@@ -5,13 +5,34 @@
       "role": "Mid level front end developer",
       "date": "July 2022-current - permanent",
       "detailsofRole": [
-        "Working with a group of front end developers to produce a complete site rebuild which handles the settings and live chat for user agents",
-        "Working on a data driven site handling reading and manipulating server data.",
+        "Creating a complete site rebuild which handles the settings and live chat for user agents.",
         "Fixing ongoing bugs on all pages within the site.",
         "Using git to work on multiple features and bugs in a team and handling merge conflicts when they arise.",
         "Working in an agile methodology with two week sprints.",
         "Tech stack- React query (caching data for speed), Zustand (global state, lightweight alternative to Redux), Typescript, React router, React, Formik for forms, Yup for validation, Material UI and Styled components when required."
-      ]
+      ],
+      "videos": [{
+        "title": "All chat bot section",
+        "description": "Here I created the UI for the bot section which includes tab filters, search and pagination.",
+        "url": "https://s3.eu-west-2.amazonaws.com/davidmulholland-developer.co.uk/futr_videos/bot+section.mp4",
+        "image":"https://s3.eu-west-2.amazonaws.com/davidmulholland-developer.co.uk/futr_videos/bot-section.png"
+      },{
+        "title": "Chat bot settings",
+        "description": "In this video I created the chat bot settings including the confidence slider, drag and drop button answer types with validation and the preview bot on the right.",
+        "url": "https://s3.eu-west-2.amazonaws.com/davidmulholland-developer.co.uk/futr_videos/button+answer+types.mp4",
+        "image":"https://s3.eu-west-2.amazonaws.com/davidmulholland-developer.co.uk/futr_videos/bot-settings.png"
+
+      }, {
+        "title": "Live chat UI",
+        "description": "Creation of the livechat UI including side window with various tabs including AI powered suggestions",
+        "url": "https://s3.eu-west-2.amazonaws.com/davidmulholland-developer.co.uk/futr_videos/livechat+ui.mp4",
+        "image":"https://s3.eu-west-2.amazonaws.com/davidmulholland-developer.co.uk/futr_videos/livechat.png"
+      }, {
+        "title": "Livechat video",
+        "description": "Creation of the live video during chat using the Microsoft Teams SDK",
+        "url": "https://s3.eu-west-2.amazonaws.com/davidmulholland-developer.co.uk/futr_videos/video.mp4",
+        "image":"https://s3.eu-west-2.amazonaws.com/davidmulholland-developer.co.uk/futr_videos/video.png"
+      } ]
     },
     {
       "company": "Collective World Ltd",
@@ -23,7 +44,8 @@
         "Working in a development team using Jira and working closely with project managers.",
         "Using SASS with BEM to create maintainable,scalable CSS and styled components on more recent projects using BrowserStack to test on all devices and platforms.",
         "Developing the Hyundai car configurator for the national site using Gatsby, React, React router, React hooks, Redux and Styled components."
-      ]
+      ],
+      "videos": null
     },
     {
       "company": "Ocado",
@@ -32,7 +54,8 @@
       "detailsofRole": [
         "Working with the design team to update keys part of the Ocado Fetch website using CSS, HTML and Contentful from XD designs from the Graphic design team.",
         "Using Contentful, Trello, Abode Creative Suite and Slack to make a high volume amount of website updates to specified deadlines."
-      ]
+      ],
+      "videos": null
     }
   ],
   "projects": [

@@ -5,7 +5,78 @@ import { flexContainer, section } from "../Global/Mixins";
 
 export const sectionContainer = styled.div`
   ${flexContainer}
+  
 `;
+
+export const videoModal = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3000;
+  background-color: rgba(10, 25, 47, 0.85);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const videoModalContainer = styled.div`
+  width: 80%;
+  height: 80%;
+  background-color: ${color.lightNavy};
+  padding: 2rem;
+  /* flex-direction: column; */
+  display: flex;  
+  justify-content: space-between;
+  `;
+
+  export const videoSection = styled.div`
+  height: 100%;
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  `;
+
+  export const videoButtonContainer = styled.div`
+  height: 22%;
+  background-image: ${({ backgroundImage }) => `url('${backgroundImage}');`};
+  /* background-image: url('https://s3.eu-west-2.amazonaws.com/davidmulholland-developer.co.uk/videoScreenshot.png'); */
+  background-size: cover;
+  border-color: red;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 3rem;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+  
+  
+    cursor: pointer;
+    background-color:  ${color.green};
+    background-image: url('');
+    color: ${color.darkSlate};  
+  
+  }
+
+  `;
+  
+
+
+export const selectVideoButtons = styled.div`
+  height: 100%;
+  width: 10%;
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: space-between;
+  `;
 
 export const experience = styled.div`
   ${section({ width: "1100px" })}
@@ -99,6 +170,14 @@ export const jobDetailsLi = styled.li`
   padding: 0.5rem 0;
   color: ${color.slate};
   font-size: 16px;
+`;
+
+export const videoLink = styled.a`
+  color: ${color.green};
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  cursor: pointer;  
 `;
 
 export const line = styled.div`

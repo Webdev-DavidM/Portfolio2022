@@ -75,6 +75,23 @@
       "image": "/images/audiophile.jpg"
     },
     {
+      "name": "Kanban board",
+      "description": "Full stack kanban board using React, Typescript, Cypress and Jest testing and deployed on AWS with a CI/CD pipeline.",
+      "tech": [
+        "React",
+        "Typescript",
+        "Cypress and Jest testing",
+        "CI/CD pipeline",
+        "AWS",
+        "Serverless framework",
+        "MongoDB",
+        "Node"
+      ],
+      "githubLink": "https://github.com/Webdev-DavidM/Todo-drag-and-drop",
+      "projectLink": "http://davidm-kanban-todo-project.s3-website.eu-west-2.amazonaws.com",
+      "image": "/images/kanban.png"
+    },
+    {
       "name": "Invoice application",
       "description": "An invoice application created from sketch designs uses React, Formik and React Transition Group to create a visually pleasing and slick experience for the user.",
       "tech": ["React", "Formik", "React-Transition-Group"],
